@@ -1,11 +1,11 @@
 ## Final ML Project: Emoji Classification
 Riley Goodling - rgoodling3@gatech.edu
 
-Haris Hussain - 
+Haris Hussain - hussainharis04@gatech.edu
 
-Yu Xin - 
+Yu Xin - yuxin60@gatech.edu
 
-Grace Armfield - 
+Grace Armfield - karmfield3@gatech.edu
 
 ### Introduction
 
@@ -13,7 +13,7 @@ Emojis have become an increasingly important feature in communication within the
 
 ### Problem
 
-With the evergrowing collection of emojis to choose from, we want to help users find their ideal emoji faster. There hae already been implementations of suggesting emojis to replace words in text, like on the Apple iPhone's predictive text feature, but we wanted to offer a solution that allows drawing images for accurate emoji suggestions. Emojis are overall a universal language, so this feature could be used as a translating dictionary without having to store data for words in every language. Along with everyday use, our feature could help those who are non-verbal express themselves better. By drawing the things they are thinking, it could help caretakers and friends better understand the needs and thoughts through emojis which can be understood by all. 
+With the evergrowing collection of emojis to choose from, we want to help users find their ideal emoji faster. There has already been implementations of suggesting emojis to replace words in text, like on the Apple iPhone's predictive text feature, but we wanted to offer a solution that allows drawing images for accurate emoji suggestions. Emojis are overall a universal language, so this feature could be used as a translating dictionary without having to store data for words in every language. Along with everyday use, our feature could help those who are non-verbal express themselves better. By drawing the things they are thinking, it could help caretakers and friends better understand the needs and thoughts through emojis which can be understood by all. 
 
 ### Data
 
@@ -34,7 +34,7 @@ Google released their data set to the public on GitHub (https://github.com/googl
 
 To perform this image classification task efficiently, we plan to retrain an existing neural network architecture. Our approach is based on Convolutional Neural Network architecture (ConvNet) with ReLU activation function. It consists of five basic types of layers: convolution layer, ReLU layer, pooling layer, flattening layer, and fully connected layer. It is a widely applied architecture in the field of image recognition, offering high accuracy under reasonable training time. In particular, its ability to detect edge arrangements is ideal for simple hand-drawn figures in our project. Also, the trained neural network provides fast image classification speed, which is ideal for situations such as note-taking and texting. To achieve this, we retrain a ConvNet based on the Google Doodle dataset.  Thus, we hope to observe the training and inference of ConvNet on a dataset of 2D vector images.
 
-Each image is 28x28 pixels, meaning we have 784 pixels per picture. We use the convulusion layer to reduce the data of each picture, pulling the 784 pixels down to around 50 data points. The convulusion layer will extract the important features from each image. Then the neural net layer will take the downsampled data and make a neural netowrk out of it. 
+Each image is 28x28 pixels, meaning we have 784 pixels per picture. We use the convolution layer to reduce the data of each picture, pulling the 784 pixels down to around 50 data points. The convolution layer will extract the important features from each image. Then the neural net layer will take the downsampled data and make a neural netowrk out of it. 
 
 Here, we show a snippet of our code that was used to create this ConvNet. This method is the most important method that shapes the neural net and shows all the steps that were taken to accomplish our goal.
 
